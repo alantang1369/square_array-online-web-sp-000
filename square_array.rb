@@ -1,4 +1,9 @@
 def square_array(array)
   # your code here
-  array.each { |number| number*number}
+  count = 0 
+  array.each do |number| 
+    array[count] = number*number
+    count += 1 
+  end  
+  array
 end
